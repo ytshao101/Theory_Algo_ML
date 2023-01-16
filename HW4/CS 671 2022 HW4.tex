@@ -1,0 +1,302 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[skip=2pt,it]{caption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+%\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{mathrsfs}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage[skip=2pt]{caption}
+% \usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\newcommand{\Amat}[0]{{{\bf A}}}
+\newcommand{\Bmat}{{\bf B}}
+\newcommand{\Cmat}{{\bf C}}
+\newcommand{\Dmat}{{\bf D}}
+\newcommand{\Emat}[0]{{{\bf E}}}
+\newcommand{\Fmat}[0]{{{\bf F}}\xspace}
+\newcommand{\Gmat}{{\bf G}}
+\newcommand{\Hmat}{{\bf H}}
+\newcommand{\Imat}{{\bf I}}
+\newcommand{\Jmat}[0]{{{\bf J}}\xspace}
+\newcommand{\Kmat}[0]{{{\bf K}}\xspace}
+\newcommand{\Lmat}[0]{{{\bf L}}}
+%\newcommand{\Mmat}[0]{{{\bf M}}\xspace}
+\newcommand{\Mmat}{{\bf M}}
+\newcommand{\Nmat}[0]{{{\bf N}}\xspace}
+\newcommand{\Omat}[0]{{{\bf O}}}
+\newcommand{\Pmat}{{\bf P}}
+\newcommand{\Qmat}[0]{{{\bf Q}}\xspace}
+\newcommand{\Rmat}[0]{{{\bf R}}}
+\newcommand{\Smat}[0]{{{\bf S}}}
+\newcommand{\Tmat}[0]{{{\bf T}}}
+\newcommand{\Umat}[0]{{{\bf U}}}
+\newcommand{\Vmat}[0]{{{\bf V}}}
+\newcommand{\Wmat}[0]{{{\bf W}}}
+\newcommand{\Xmat}[0]{{{\bf X}}}
+\newcommand{\Ymat}{{\bf Y}}
+%\newcommand{\Ymat}[0]{{{\bf Z}}}
+\newcommand{\Zmat}{{\bf Z}}
+
+\newcommand{\av}[0]{{\boldsymbol{a}}}
+\newcommand{\bv}[0]{{\boldsymbol{b}}}
+\newcommand{\cv}[0]{{\boldsymbol{c}}}
+\newcommand{\dd}{\boldsymbol{d}}
+\newcommand{\ev}[0]{{\boldsymbol{e}}\xspace}
+\newcommand{\fv}[0]{{\boldsymbol{f}}}
+\newcommand{\gv}[0]{{\boldsymbol{g}}\xspace}
+\newcommand{\hv}[0]{{\boldsymbol{h}}}
+\newcommand{\iv}[0]{{\boldsymbol{i}}}
+\newcommand{\jv}[0]{{\boldsymbol{j}}\xspace}
+\newcommand{\kv}[0]{{\boldsymbol{k}}\xspace}
+\newcommand{\lv}[0]{{\boldsymbol{l}}}
+\newcommand{\mv}[0]{{\boldsymbol{m}}}
+\newcommand{\nv}[0]{{\boldsymbol{n}}\xspace}
+\newcommand{\ov}[0]{{\boldsymbol{o}}}
+\newcommand{\pv}[0]{{\boldsymbol{p}}}
+\newcommand{\qv}[0]{{\boldsymbol{q}}\xspace}
+\newcommand{\rv}{\boldsymbol{r}}
+\newcommand{\sv}[0]{{\boldsymbol{s}}}
+\newcommand{\tv}[0]{{\boldsymbol{t}}\xspace}
+\newcommand{\uv}{\boldsymbol{u}}
+\newcommand{\vv}{\boldsymbol{v}}
+\newcommand{\wv}{\boldsymbol{w}}
+\newcommand{\xv}{\boldsymbol{x}}
+\newcommand{\yv}{\boldsymbol{y}}
+\newcommand{\zv}{\boldsymbol{z}}
+\newcommand{\cdotv}{\boldsymbol{\cdot}}
+
+\newcommand{\Gammamat}[0]{{\boldsymbol{\Gamma}}\xspace}
+\newcommand{\Deltamat}[0]{{\boldsymbol{\Delta}}\xspace}
+\newcommand{\Thetamat}{\boldsymbol{\Theta}}
+\newcommand{\Betamat}{\boldsymbol{\Beta}}
+\newcommand{\Lambdamat}{\boldsymbol{\Lambda}}
+\newcommand{\Ximat}[0]{{\boldsymbol{\Xi}}\xspace}
+\newcommand{\Pimat}[0]{{\boldsymbol{\Pi}}\xspace}
+\newcommand{\Sigmamat}[0]{{\boldsymbol{\Sigma}}}
+\newcommand{\Upsilonmat}[0]{{\boldsymbol{\Upsilon}}\xspace}
+\newcommand{\Phimat}{\boldsymbol{\Phi}}
+\newcommand{\Psimat}{\boldsymbol{\Psi}}
+\newcommand{\Omegamat}[0]{{\boldsymbol{\Omega}}}
+
+\newcommand{\alphav}{\boldsymbol{\alpha}}
+\newcommand{\betav}[0]{{\boldsymbol{\beta}}}
+\newcommand{\gammav}[0]{{\boldsymbol{\gamma}}\xspace}
+\newcommand{\deltav}[0]{{\boldsymbol{\delta}}\xspace}
+\newcommand{\epsilonv}{\boldsymbol{\epsilon}}
+\newcommand{\zetav}{\boldsymbol{\zeta}}
+\newcommand{\etav}[0]{{\boldsymbol{\eta}}\xspace}
+\newcommand{\ellv}[0]{{\boldsymbol{\ell}}}
+\newcommand{\thetav}{\boldsymbol{\theta}}
+\newcommand{\iotav}[0]{{\boldsymbol{\iota}}}
+\newcommand{\kappav}[0]{{\boldsymbol{\kappa}}\xspace}
+\newcommand{\lambdav}[0]{{\boldsymbol{\lambda}}}
+\newcommand{\muv}[0]{{\boldsymbol{\mu}}}
+\newcommand{\nuv}[0]{{\boldsymbol{\nu}}}
+\newcommand{\xiv}[0]{{\boldsymbol{\xi}}\xspace}
+\newcommand{\omicronv}[0]{{\boldsymbol{\omicron}}\xspace}
+\newcommand{\piv}{\boldsymbol{\pi}}
+\newcommand{\rhov}[0]{{\boldsymbol{\rho}}\xspace}
+\newcommand{\sigmav}[0]{{\boldsymbol{\sigma}}}
+\newcommand{\tauv}[0]{{\boldsymbol{\tau}}\xspace}
+\newcommand{\upsilonv}[0]{{\boldsymbol{\upsilon}}\xspace}
+\newcommand{\phiv}{\boldsymbol{\phi}}
+\newcommand{\chiv}[0]{{\boldsymbol{\chi}}\xspace}
+\newcommand{\psiv}{\boldsymbol{\psi}}
+\newcommand{\varthetav}{\boldsymbol{\vartheta}}
+\newcommand{\omegav}[0]{{\boldsymbol{\omega}}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newcommand{\Xcal}{\mathcal{X}}
+\newcommand{\Ycal}{\mathcal{Y}}
+\newcommand{\NNcal}{\mathcal{N}}
+\newcommand{\Lcal}{\mathcal{L}}
+\newcommand{\Ncal}{\mathcal{N}}
+\newcommand{\Bcal}{\mathcal{B}}
+\newcommand{\Dcal}{\mathcal{D}}
+\newcommand{\Tcal}{\mathcal{T}}
+\newcommand{\Pcal}{\mathcal{P}}
+\newcommand{\Ical}{\mathcal{I}}
+\newcommand{\Gcal}{\mathcal{G}}
+\newcommand{\Qcal}{\mathcal{Q}}
+\newcommand{\Hcal}{\mathcal{H}}
+\newcommand{\Vcal}{\mathcal{V}}
+\newcommand{\Jcal}{\mathcal{J}}
+\newcommand{\Scal}{\mathcal{S}}
+\newcommand{\Wcal}{\mathcal{W}}
+\newcommand{\Ccal}{\mathcal{C}}
+
+
+
+\title{Homework 4, Machine Learning, Fall 2022}
+\author{ }
+\date{}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+
+\begin{document}
+\maketitle
+\textbf{*IMPORTANT* Homework Submission Instructions}
+\begin{enumerate}
+    \item All homeworks must be submitted in one PDF file to Gradescope. 
+    \item Please make sure to select the corresponding HW pages on Gradescope for each question.
+    \item For all theory problems, please type the answer and proof using Latex or Markdown, and export the tex or markdown into a PDF file. 
+    \item For all coding components, complete the solutions with a Jupyter notebook/Google Colab, and export the notebook (including both code and outputs) into a PDF file. Concatenate the theory solutions PDF file with the coding solutions PDF file into one PDF file which you will submit. 
+    \item Failure to adhere to the above submission format may result in penalties.  
+\end{enumerate}
+
+
+\paragraph{} \textbf{All homework assignments must be your independent work product, no collaboration is allowed.} You may check your assignment with others or the internet after you have done it, but you must actually do it by yourself. \textbf{Please copy the following statement at the top of your assignment file}: \\
+
+Agreement: This assignment represents my own work. I did not work on this assignment with others. All coding was done by myself. \\
+
+\vspace{4in}
+
+\newpage
+
+\section{VC dimension of Binary Decision Trees with Fixed Split Points} 
+
+This problem is much easier than the one from the last homework!
+In this problem we consider the task of binary classification with labels $\{-1, 1\}$. 
+\\\\
+Recall that binary decision trees work by splitting on points in the feature space. Those points are called split points. Let $\mathcal{X}$ be a set of fixed, predetermined and distinct split points on the domain $X$. 
+\\\\
+We consider the following set of binary decision trees: 
+$$\mathcal{F}:= \{ \text{the set of all binary decision trees whose split points are exactly equal to } \mathcal{X} \text{ with exactly $\ell$ leaves}  \}$$
+In other words, $\mathcal{F}$ is a set of trees that are identical except for the choice of predicted labels assigned to each leaf.
+\\\\
+What is the VC dimension of $\mathcal{F}$?
+
+\section{Topic Modeling with EM (Ed Tam)}
+In this question, we explore how to use the EM algorithm to perform inference for probabilistic machine learning models. 
+\\\\
+The goal of the machine learning model in this question is to learn the latent ``topics'' within a collection of documents. We set up the problem in the following way: 
+\begin{itemize}
+    \item We have a word dictionary, $\mathcal{W}$, with a size of $N$ words. $\mathcal{W}$ is a list of all unique words that appear at least once in our documents. We use $n$ to index the $N$ words. 
+    \item We have a set of $M$ documents, $d_1, \cdots, d_M$ each represented as a $N \times 1$ column vector, with the $i$th entry representing the number of times the  $i$th word in the dictionary appeared in the document. (We're using a ``bag of words'' representation for each document, where a document is only represented by the collection of words it contains and not the order of the words.)
+    \item  We can use the notation $q(w_n; d_i)$ for the number of times the word $w_n$ appears in document $d_i$.
+    \item We consider a set of $K$ topics $z_1, \cdots, z_k, \cdots, z_K$. We define each topic $z$ as a probability distribution over the words in the dictionary $\mathcal{W}$. E.g., you can imagine a topic that represents, say, ``sports'' would put higher probability on words like ``basketball,'' ``practice,'' ``score,'' etc., whereas a topic that represents ``music'' would put higher probability on words like ``guitar,'' ``piano,'' ``chords,'' etc. (but interestingly, the word ``score'' might also come up in music).
+    \item We think of each document as being composed by a combination of topics. For example, a given document might be $70$ percent on the topic ``sports,'' $20$ percent on the topic ``food,'' and $10$ percent on the topic ``science.'' Of course, these percentages/proportions of topics must sum up to $1$. In ML/statistics speak, each document is generated by a ``mixture'' of topics. 
+\end{itemize}
+We imagine the collection of words in each of the documents that we have collected as independently generated by some underlying probabilistic model. 
+A reasonable model to think about the generative process for the words in each document is as follows: 
+\begin{itemize}
+    \item Recall that each topic is a distribution on $\mathcal{W}$, the set of words. Mathematically, we model the probability that word $n$ appears in topic $k$ as $$\mathrm{Pr}(w_n|z_k) = \beta_{kn}, \;\;\sum_{n=1}^{N}\beta_{kn}=1$$ 
+    In other words, the conditional distribution of a word given a topic is a categorical distribution. 
+    \item Similarly, documents are composed by combinations of various topics, with each document having a different distribution/weighting on each topic. Mathematically, we model the proportion of a topic $z_k$ within a document $d_i$ as $$\mathrm{Pr}(z_k|d_i) = \alpha_{ik}, \;\;\sum_{k=1}^{K}\alpha_{ik}=1$$ 
+    In other words, the conditional distribution of a topic given a document is also a categorical distribution.
+
+    \item To ease notation, when we are referring to the collection of all the $\{\beta_{kn}\}_{k = 1, n = 1}^{k = K, n = N}$ parameters, we use the notation $\beta$. Similarly, we use $\alpha$ to denote the collection of all $\{\alpha_{ik}\}_{i = 1, k = 1}^{i = M, k = K}$ parameters.
+    
+\end{itemize}
+We are interested in inferring $\alpha_{ik}$ and $\beta_{kn}$ because they're informative: $\alpha_{ik}$ represents the proportion of topic $k$ that makes up document $i$ and $\beta_{kn}$ represents the likelihood of seeing word $n$ under topic $k$. 
+\\\\As a result, in a document $d_i$, a single word $w_n$ is formed as follows: 
+\begin{enumerate}
+    \item Sample a topic $z_k$ from the topic distribution $\mathrm{Pr}(z_k|d_i)$ (with probability $\alpha_{ik}$)
+    \item Sample a word (from the sampled topic in step 1) according to the vocabulary distribution $\mathrm{Pr}(w_n|z_k)$ (with probability $\beta_{kn}$) 
+\end{enumerate}
+Each word is sampled independently according to the two sampling steps above.
+\\\\We denote the probability $p(\text{word n appears in document i}|\alpha, \beta)$ as $p_{ni}$ for simplicity. We can conclude from the description of the model that $p_{ni} = \sum_{k = 1}^K \mathrm{Pr}(w_n|z_k)\mathrm{Pr}(z_k|d_i) =  \beta_{kn}\alpha_{ik}$ (this is just the law of total probability. Word $n$ can come from topic $z_1$, or $z_2$, or $z_K$ ... if we sum up all the possibilities, that gives us the total probability.)
+\\\\
+Our goal is to learn these parameters (the $\alpha$'s and the $\beta$'s) by utilizing the Expectation-Maximization (EM) algorithm to maximize the log-likelihood function. The way the EM algorithm works is it iteratively updates its estimates of $\alpha$ and $\beta$ via repeating two steps: the E-step and the M-step. 
+\subsection{Derive Log-Likelihood} 
+In this subquestion, we want you to write down and simplify the log-likelihood of the above topic model.
+\\\\Hint: if you don't know where to start, think about the probability of word $n$ appearing in document $i$.  
+\\\\Your answer should involve $\alpha$, $\beta$ and $q$. 
+\subsection{E Step}  
+Now that we have derived the form of the log-likelihood of our model, what we want is to find values of $\alpha$ and $\beta$ to maximize the log-likelihood. The EM algorithm is one way to achieve this goal. 
+\\\\The EM algorithm is an iterative algorithm, which means that we will update the values of $\alpha$ and $\beta$ iteratively. We use the notation $\alpha^{old},\beta^{old}$ to denote the values of $\alpha$ and $\beta$ at the previous iteration, and $\alpha^{new},\beta^{new}$ to denote the values of $\alpha$ and $\beta$ at the next iteration. 
+\\\\In the E step, we want to derive an expression for the proportion of topic $z_k$ in document $d_i$, given that word $n$ is in document $d_i$. Concretely, we want to find an expression for $p(z_k|d_i,w_n,\alpha^{old},\beta^{old})$. Note that this probability is for a specific $k, n$ and $i$. Also note that your expression should only depend on $\alpha^{old},\beta^{old}$.
+\subsection{Find ELBO for M-Step}
+After the E-step, we want to proceed to the M-Step, which finds $\alpha$ and $\beta$ values that maximizes a lower bound for the log-likelihood. 
+\\\\
+This lower bound of the log-likelihood is often called the Evidence Lower Bound (ELBO), which we will denote as $A(\alpha, \beta)$. Note that it is a function of $\alpha$ and $\beta$.
+\\\\
+To ease notation, define $\gamma_{ink} := p(z_k|w_n,d_i,\alpha^{old},\beta^{old})$ (note that this is what we found in the E-step.) 
+\\\\
+Show that the following function $A(\alpha,\beta)$ is a lower bound for the log-likelihood. 
+	\[A(\alpha,\beta)= \sum_{i=1}^M\sum_{n=1}^N\sum_{k=1}^Kq(w_n,d_i)\gamma_{ink}\log\big(\frac{\alpha_{ik}\beta_{kn}}{\gamma_{ink}}\big).\]
+
+\subsection{M Step}
+Now that we have the ELBO, in the M-step we want to find the optimal values of $\alpha$ and $\beta$ that maximizes the ELBO. We will assign the optimal values to $\alpha^{new},\beta^{new}$. Find the form of $\alpha^{new},\beta^{new}$.  
+\\\\
+Hint: Don't forget the constraints on $\alpha$ and $\beta$. 
+
+
+
+\section{Gradient computations in Neural Networks (Ed Tam)}
+
+Suppose you have a feedforward neural network with architecture $784-H-H-1$, where $H$ is a positive integer that represent the number of hidden nodes in the middle layers. The number of hidden layers in this model is 2. The model can be represented as 
+\begin{align*}
+f(\mathbf{x}) : \mathbb{R}^{784}\rightarrow [0,1]
+\end{align*}
+where the learnable parameters are $\{\mathbf{W}_1 \in \mathbb{R}^{784 \times H}, \mathbf{b}_1 \in \mathbb{R}^H, \mathbf{W}_2 \in \mathbb{R}^{H\times H}, \mathbf{b}_2 \in \mathbb{R}^H, \mathbf{w}_3 \in \mathbb{R}^{H}, b_3 \in \mathbb{R}\}$. Explicitly, $f(\mathbf{x})$ is
+\begin{align*}
+\mathbf{h}_1 &= \sigma\left( \mathbf{W}_1^\top \mathbf{x} + \mathbf{b}_1 \right) \\
+\mathbf{h}_2 &= \sigma\left( \mathbf{W}_2^\top \mathbf{h}_1 + \mathbf{b}_2 \right) \\
+f(\mathbf{x}) &= \mathbf{h}_3 =  \sigma\left( \mathbf{W}_3^\top \mathbf{h}_2 + b_3 \right) 
+\end{align*}
+where the activation function is $\sigma(z)=\frac{1}{1+e^{-z}}$. Recall that the activation function is applied element-wise, which means if $\mathbf{x}=(x^1,x^2,...,x^d)\in\mathbb{R}^d$, we have $\sigma(\mathbf{x}) = (\sigma(x^1), \sigma(x^2),...,\sigma(x^d))$. 
+\\\\The loss function for this model (or the negative log-likelihood) when doing binary classification with labels $y \in \{0, 1\}$ is the usual one:
+\[\mathcal{L}=-\sum_{i=1}^{N}y_i\log(f(\mathbf{x}_i)) + (1-y_i)\log(1-f(\mathbf{x}_i)).\]
+Here, $\{(\xv_i, y_i)\}_{i = 1}^N$ is a training sample. 
+\\\\Some useful notation that might come in handy is to define $\zv_l := \mathbf{W}_l^{\top} \hv_{l-1}+\bv_l$ and to define $\delta_l^i := \frac{\partial \mathcal{L}_i}{\partial \zv_l}$. In other words, $\zv_l$ is the ``pre-activation" at layer $l$. 
+\subsection{Gradient Evaluation} Derive the gradient of $\frac{\partial \mathcal{L}}{\partial \mathbf{W}_1}$ by backpropagation. 
+\\\\Remark: One way to approach this problem is to think about the gradient of the loss function $\mathcal{L}_i$ for each training data point $i$ first, and then add the $\mathcal{L}_i$'s up later to obtain $\mathcal{L}$. (Of course, you do not necessarily have to follow this recipe, as there are other ways to solve this problem.) 
+
+\subsection{General Rule} Based on the above derivations for 3.1, in the case where there are $L - 1$ hidden layers in the neural network, deduce a general rule for computing $\delta_l^i := \frac{\partial \mathcal{L}_i}{\partial \zv_j}$ in terms of $\delta_{l + 1}^i$, $\mathbf{W}_{l + 1}$ and $\mathbf{h}_l$ for any integer layer number $l$ that lies within $L - 1 \geq l \geq 1$.
+
+
+
+\section{Clustering (Yi)}
+In this problem, we will explore several clustering algorithms using mall\_customers dataset. This dataset consists of 200 samples with two features: annual income and spending score. 
+\begin{enumerate}
+    \item Load the dataset and draw a scatter plot of the dataset.
+    \item Based on the distribution of the data points, select a reasonable $k$ and implement the k-means algorithm in the language of your choice, using the euclidean distance (between each data point and the cluster center) as the distance metric. The \textbf{arguments} of your function are $k$ and the input dataset. \textbf{Return} both the cluster assignment for each point in the dataset, as well as the center for each cluster. You can initialize each center by randomly selecting a point from the input data. (Note that it is generally a good idea to perform multiple replicates for k-means.)
+    \par Then draw a scatter plot of the dataset, using different colors for different clusters. Mark the center of each cluster. Intuitively, what kind of customers does each cluster represent? 
+    \item We can also directly use \textit{KMeans} in \textit{sklearn}. Choose the same number of clusters as in the previous question. Do you get \textbf{exactly} the same results when using \textit{sklearn} and your implementation? Calculate which one is better.
+    \item K-medians is a variation of k-means, which minimizes error over all clusters with respect to the 1-norm distance metric. Implement the k-medians algorithm from scratch, using the same $k$ in the previous questions. The \textbf{arguments} of your function are $k$ and the input dataset. \textbf{Return} both the cluster assignment for each point in the dataset, as well as the median for each cluster. 
+    \par Then draw a scatter plot of the dataset, using different colors for different clusters. Mark the median of each cluster.
+    \par Do you get \textbf{exactly} the same results when using k-means and k-medians?
+\end{enumerate}
+
+\section{Convolutional Neural Network on CIFAR-10 (Yi)}
+In this problem, we will train a convolutional neural network to classify the CIFAR-10 dataset. The dataset consists of 60000 32x32 images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. We will not need to use a GPU for this problem. With a CPU, training the network for 30 epochs takes roughly 10 to 15 minutes. We will be using PyTorch for this problem. If you need help there are many online resources including the official Pytorch documentation: \url{https://pytorch.org/tutorials/beginner/blitz/neural\_networks\_tutorial.html}
+\begin{enumerate}
+    \item Follow the skeleton code in \textbf{\textit{cifar10.ipynb}} and fill in the holes in the code (marked with ``TODO”).
+    \item Plot the training losses and validation losses in one figure, and use another figure to plot the training accuracies and validation accuracies. Is this model overfitting?
+    \item Report the test accuracy, and show the confusion matrix for test. Which class seems to get confused the most? Intuitively, why does that make sense?
+\end{enumerate}
+
+\end{document}
